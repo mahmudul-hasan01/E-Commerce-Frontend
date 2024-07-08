@@ -1,8 +1,11 @@
+import Banner from "./Banner/Banner";
+import HomeCategory from "./HomeCategory/HomeCategory";
 
 const Home = () => {
     return (
         <div>
-            Home
+            <Banner />
+            <HomeCategory />
         </div>
     );
 };

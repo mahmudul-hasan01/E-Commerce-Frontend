@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className="flex items-center justify-between px-4 py-2">
+        <nav className="flex items-center justify-between px-4 py-2 container">
             <Link to={'/'} className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold hover:cursor-pointer">
                 <img src={logo} alt="" />
             </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     </li>
                 </Link>
                 <Link to={'/carate-account'}>
-                    <li className="group flex  cursor-pointer flex-col py-2 px-4 rounded-md bg-yellow-400">
+                    <li className="group flex  cursor-pointer flex-col py-2 px-4 rounded-md bg-[#F7CE26]">
                         Create Account<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
                     </li>
                 </Link>
