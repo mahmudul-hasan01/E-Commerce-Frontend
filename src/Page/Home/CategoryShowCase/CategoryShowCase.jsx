@@ -1,7 +1,7 @@
 import { useState } from "react";
-import img1 from '../../../assets/images/shape-img/icon/01.png'
-import img2 from '../../../assets/images/shape-img/icon/02.png'
-import img3 from '../../../assets/images/shape-img/icon/03.png'
+// import img1 from '../../../assets/images/shape-img/icon/01.png'
+// import img2 from '../../../assets/images/shape-img/icon/02.png'
+// import img3 from '../../../assets/images/shape-img/icon/03.png'
 import bgImage from '../../../assets/images/shape-img/01.jpg'
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
