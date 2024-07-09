@@ -10,7 +10,7 @@ const Register = () => {
     return (
         <div className='container mx-auto py-4 bg-cover flex justify-center items-center' style={{ backgroundImage: `url(${bgImage})` }}>
             {/* 11111 */}
-            <div className='w-2/5 space-y-2'>
+            <div className='w-2/5 space-y-2 pl-5'>
                 <span className='text-[#FFE040] text-2xl'>{subtitle}</span>
                 {title}
                 <p className='text-white'>{dec}</p>
