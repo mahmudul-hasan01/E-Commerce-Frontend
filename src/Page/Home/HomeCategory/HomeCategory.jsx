@@ -50,9 +50,9 @@ const HomeCategory = () => {
         <div className="py-20 container mx-auto">
             <div>
                 <h1 className="text-[#FFE040] text-2xl text-center"> {subTitle}</h1>
-                <h1 className="text-center font-semibold text-3xl py-5">{title}</h1>
+                <h1 className="text-center font-semibold text-3xl pt-3">{title}</h1>
             </div>
-            <div className="grid grid-cols-3 gap-7 mb-10">
+            <div className="grid grid-cols-3 gap-7 my-10">
                 {
                     categoryList.map((item, i) => <div key={i} className="hover:scale-105 hover:text-[#FFE040] duration-500 relative">
                         <Link to={'/shop'}>
