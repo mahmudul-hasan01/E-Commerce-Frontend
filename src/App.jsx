@@ -6,6 +6,7 @@ import MainLayout from "./MainLayout";
 import Blog from "./Page/Blog/Blog";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import Shop from "./Page/Shop/Shop";
 
 
 export const router = createBrowserRouter([
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
     children: [
       { path: '/', element: <Home /> },
       { path: '/blog',element: <Blog /> },
+      { path: '/shop',element: <Shop /> },
       { path: '/navbar',element: <Navbar /> },
       { path: '/footer',element: <Footer /> },
     ]
