@@ -13,20 +13,20 @@ const Banner = () => {
     const [fiterdProduct, setFiterdProduct] = useState(product)
     console.log(fiterdProduct);
 
-    const bannerList = [
-        {
-            iconName: "icofont-users-alt-4",
-            text: "1.5 Million Customers",
-        },
-        {
-            iconName: "icofont-notification",
-            text: "More then 2000 Marchent",
-        },
-        {
-            iconName: "icofont-globe",
-            text: "Buy Anything Online",
-        },
-    ];
+    // const bannerList = [
+    //     {
+    //         iconName: "icofont-users-alt-4",
+    //         text: "1.5 Million Customers",
+    //     },
+    //     {
+    //         iconName: "icofont-notification",
+    //         text: "More then 2000 Marchent",
+    //     },
+    //     {
+    //         iconName: "icofont-globe",
+    //         text: "Buy Anything Online",
+    //     },
+    // ];
 
     const handleSearch = (e) => {
         const searchTerm = e.target.value

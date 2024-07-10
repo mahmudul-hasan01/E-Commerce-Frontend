@@ -4,6 +4,7 @@ import { FaAlignJustify, FaAlignCenter } from "react-icons/fa";
 import productData from '../../../public/products.json'
 import ProductCart from "./ProductCart";
 import Pagination from "./Pagination";
+import Search from "./Search";
 
 const Shop = () => {
 
@@ -29,9 +30,9 @@ const Shop = () => {
     return (
         <div>
             <PageHeader name={'Shop'} cutPage={'shop'} />
-            <div className="container mx-auto grid grid-cols-12 py-10">
+            <div className="container mx-auto grid grid-cols-12 py-10 gap-5">
 
-                <div className="col-span-9 first-letter:">
+                <div className="col-span-8 first-letter:">
                     <div className="flex justify-between mb-10">
                         <h1 className="text-xl font-semibold">{showResults}</h1>
                         <div className={`flex gap-4 text-xl pr-8`}>
@@ -45,8 +46,8 @@ const Shop = () => {
                     <Pagination productPerPage={productPerPage} totalProduct={products.length} paginate={paginate} activePage={currentPage}/>
                 </div>
 
-                <div className="col-span-3">
-                    2
+                <div className="col-span-4">
+                <Search products={products} GridList={GridList} />
                 </div>
 
             </div>
