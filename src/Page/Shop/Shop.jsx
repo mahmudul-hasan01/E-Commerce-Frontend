@@ -6,6 +6,7 @@ import ProductCart from "./ProductCart";
 import Pagination from "./Pagination";
 import Search from "./Search";
 import ShopCategory from "./ShopCategory";
+import PopularPost from "./PopularPost";
 
 const Shop = () => {
 
@@ -62,6 +63,7 @@ const Shop = () => {
                 <div className="col-span-4">
                     <Search products={products} GridList={GridList} />
                     <ShopCategory filterItem={filterItem} setItems={setProducts} menuItems={menuItems} setProducts={setProducts} seletedCategory={seletedCategory} />
+                    <PopularPost />
                 </div>
 
             </div>
