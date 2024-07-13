@@ -7,6 +7,7 @@ import Pagination from "./Pagination";
 import Search from "./Search";
 import ShopCategory from "./ShopCategory";
 import PopularPost from "./PopularPost";
+import TagPage from "./TagPage";
 
 const Shop = () => {
 
@@ -64,6 +65,7 @@ const Shop = () => {
                     <Search products={products} GridList={GridList} />
                     <ShopCategory filterItem={filterItem} setItems={setProducts} menuItems={menuItems} setProducts={setProducts} seletedCategory={seletedCategory} />
                     <PopularPost />
+                    <TagPage />
                 </div>
 
             </div>

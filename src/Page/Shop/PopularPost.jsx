@@ -36,7 +36,7 @@ const PopularPost = () => {
     ]
 
     return (
-        <div className="mt-7">
+        <div className="my-7">
             <h1 className="text-2xl font-semibold ml-2 mb-5">{title}</h1>
             <ul className="space-y-4">
                 {
