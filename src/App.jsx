@@ -7,6 +7,7 @@ import Blog from "./Page/Blog/Blog";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Shop from "./Page/Shop/Shop";
+import SingleProduct from "./Page/Shop/SingleProduct";
 
 
 export const router = createBrowserRouter([
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/blog',element: <Blog /> },
       { path: '/shop',element: <Shop /> },
+      { path: '/shop/:id',element: <SingleProduct /> },
       { path: '/navbar',element: <Navbar /> },
       { path: '/footer',element: <Footer /> },
     ]

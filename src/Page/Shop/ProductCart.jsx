@@ -5,6 +5,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import { Link } from "react-router-dom";
 
 const ProductCart = ({ GridList, products }) => {
 
@@ -23,7 +24,7 @@ const ProductCart = ({ GridList, products }) => {
                                         <div className="absolute top-1/3 left-1/4 hidden group-hover:flex text-4xl text-[#F15F28] duration-500 gap-3">
                                             <FaCartShopping />
                                             <FaHeart />
-                                            <MdRemoveRedEye />
+                                            <Link to={`/shop/${product.id}`} > <MdRemoveRedEye /></Link>
                                         </div>
                                     </div>
                                     <div className="text-center space-y-3 my-5 font-semibold">
