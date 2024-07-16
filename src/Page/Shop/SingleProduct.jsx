@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import { Rating } from '@smastrom/react-rating'
+import Reviews from "./Reviews";
 
 
 const SingleProduct = () => {
@@ -99,7 +100,7 @@ const SingleProduct = () => {
 
                                             <div className="flex items-center gap-2">
                                                 <div className="border flex items-center justify-center h-[50px] w-[40px] text-2xl hover:bg-orange-500 duration-500 rounded-md hover:text-white cursor-pointer" onClick={handleDecrease}>-</div>
-                                                <input className="py-2 px-4 w-10 font-semibold" type="text" value={number} />
+                                                <input className="py-2 px-2 text-center w-12 font-semibold" type="text" value={number} />
                                                 <div className="border flex items-center justify-center h-[50px] w-[40px] text-2xl hover:bg-orange-500 duration-500 rounded-md hover:text-white cursor-pointer" onClick={handleIncrease}>+</div>
                                             </div>
 
@@ -113,15 +114,13 @@ const SingleProduct = () => {
                                             <button className="px-7 h-[50px] border rounded-md bg-orange-500 text-white">Add To Cart</button>
 
                                             <Link className="flex justify-center items-center px-7 h-[50px] border rounded-md bg-blue-500 text-white" to={'/'}>Check Out</Link>
-                                            {/* <span className="px-7 h-[50px] border rounded-md bg-blue-500 text-white">
-                                            </span> */}
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            Review
+                            <Reviews />
                         </div>
                     </div>
                 </div>
